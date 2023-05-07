@@ -33,3 +33,9 @@ var total = 100
 var mark1 = +prompt("Enter the marks of first subject")
 var mark2 = +prompt("Enter the marks of second subject")
 var mark3 = +prompt("Enter the marks of third subject")
+var per1 = (mark1 / total) * 100
+var per2 = (mark2 / total) * 100
+var per3 = (mark3 / total) * 100
+var totalMarks = new String(mark1 + mark2 + mark3);
+var final = new String((totalMarks / 300) * 100);
+document.write("<table><thead><tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr><tr><td>" + subject1 + "</td><td>" + total + "</td><td>" + mark1 + "</td><td>" + per1 + "%</td></tr><tr><td>" + subject2 + "</td><td>" + total + "</td><td>" + mark2 + "</td><td>" + per2 + "%</td></tr><tr><td>" + subject3 + "</td><td>" + total + "</td><td>" + mark3 + "</td><td>" + per3 + "%</td></tr><tr><td>" + "</td><td>" + " <b>300</b></td><td>" + totalMarks.bold() + "</td><td>" + final.bold() + "%</td></tr>")
